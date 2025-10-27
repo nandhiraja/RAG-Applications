@@ -34,15 +34,27 @@ def getRelatedData(Query):
 
 
 processData("/home/nandhiraja/Nandhiraja C/Agentic AI Application/KnowledgeBase/IT_Sector_Kb.txt")
-while(True):
-    userInput = input("Enter the Question IT related ? ")
-    if(userInput.lower()=="no"):
-        break
+# while(True):
+#     userInput = input("Enter the Question IT related ? ")
+#     if(userInput.lower()=="no"):
+#         break
 
-    related_data = getRelatedData(userInput)
+#     related_data = getRelatedData(userInput)
 
-    # print(related_data)
-    print("Generate.. ")
-    response = Model.getRespose(userInput, related_data)
+#     # print(related_data)
+#     print("Generate.. ")
+#     response = Model.getRespose(userInput, related_data)
+    
+#     print("-- Model Ans : \n", response)
+
+def response_it(user_query):
+    if(len(user_query)==0):
+        return
+        
+
+    related_data = getRelatedData(user_query)
+
+    print("Generate..... ")
+    response = Model.getRespose(user_query, related_data)
     
     print("-- Model Ans : \n", response)
