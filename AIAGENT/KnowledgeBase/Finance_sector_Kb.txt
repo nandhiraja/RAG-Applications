@@ -1,0 +1,231 @@
+==============================
+FINANCE KNOWLEDGE BASE (v1.0)
+==============================
+
+This document provides complete details of the organization’s Finance Department operations, policies, and common FAQs.  
+It serves as a reference for employees to understand payroll processes, reimbursement claims, travel policy, and overall financial governance.
+
+---------------------------------------
+SECTION 1: FINANCE SERVICE DESK AND CONTACT FLOW
+---------------------------------------
+
+- All finance-related queries and service requests must be logged via the Finance Helpdesk.
+- Portal URL: https://financeportal.company.com
+- Email: finance.support@company.com
+- Request categories include:
+  - Payroll & Salary
+  - Reimbursements & Claims
+  - Budget & Approvals
+  - Tax & Compliance
+  - Vendor Payments
+- Service Level Targets:
+  - Payroll issues → 1 business day
+  - Reimbursement approvals → 3–5 business days
+  - Budget clarifications → 5–7 business days
+  - Tax document requests → 2 business days
+- Escalation Matrix:
+  - Level 1: Finance Service Desk
+  - Level 2: Payroll Manager / Reimbursement Lead
+  - Level 3: Head of Finance (CFO)
+
+---------------------------------------
+SECTION 2: PAYROLL PROCESS AND SALARY INFORMATION
+---------------------------------------
+
+- Payroll is processed on the 28th of every month.
+- Salary disbursement occurs between the 28th and 30th.
+- Salary is credited to the bank account registered in the HR system.
+- Salary slips are generated automatically and can be downloaded from the Employee Portal.
+- Any corrections to salary must be reported within 3 working days after credit.
+- Components of monthly salary:
+  - Basic Pay
+  - House Rent Allowance (HRA)
+  - Special Allowance
+  - Provident Fund (PF)
+  - Tax Deducted at Source (TDS)
+- Payroll cut-off date for variable pay: 20th of each month.
+- Salary revision changes take effect in the next payroll cycle.
+- Overtime, bonuses, and arrears (if applicable) are included in monthly processing.
+
+---------------------------------------
+SECTION 3: TAXATION AND COMPLIANCE
+---------------------------------------
+
+- Employees must declare investments by 31st December to avoid higher TDS deduction.
+- Tax calculations are based on the latest Income Tax Act provisions.
+- PAN and Aadhaar linkage is mandatory for payroll processing.
+- Form 16 is issued annually by June 15th.
+- TDS recalculations occur in February for the final financial year adjustment.
+- Finance Department will not accept unverified tax proofs.
+- The company strictly adheres to all GST and IT compliance regulations for vendors and employees.
+- Employees can contact tax.support@company.com for any taxation-related questions.
+
+---------------------------------------
+SECTION 4: REIMBURSEMENTS AND EXPENSE CLAIMS
+---------------------------------------
+
+- Employees can claim reimbursements for business travel, client meetings, internet bills (for remote work), and other approved expenses.
+- Expense claims must be submitted within 30 days of the expense date.
+- Mandatory details for each claim:
+  - Expense date
+  - Expense category (Travel, Food, Internet, Client Expense)
+  - Bill copy / invoice
+  - Manager approval
+- Once submitted, claims are reviewed by Finance within 3 working days.
+- Approved claims are paid within 10 business days.
+- Rejected claims will include a reason in the rejection email.
+- Internet bill reimbursement limit: ₹1000 per month for remote employees.
+- Travel and meal reimbursements are based on grade and role.
+- To check claim status, log into Employee Portal → Finance → My Claims.
+
+---------------------------------------
+SECTION 5: TRAVEL AND EXPENSE POLICY
+---------------------------------------
+
+- Domestic travel must be booked through the company’s approved Travel Desk.
+- International travel requires pre-approval from the Department Head and CFO.
+- Travel advances can be requested but must be settled within 10 days of trip completion.
+- Employees must retain all supporting documents:
+  - Boarding passes
+  - Hotel bills
+  - Cab receipts
+- Reimbursable categories:
+  - Airfare (Economy Class)
+  - Hotel (within approved nightly limits)
+  - Food (up to ₹1000/day domestic, ₹3000/day international)
+  - Local transport (actuals with bills)
+- Non-reimbursable items:
+  - Alcohol
+  - Personal entertainment
+  - Unapproved upgrades
+- For cancellations, refund credits must be adjusted in subsequent reimbursements.
+
+---------------------------------------
+SECTION 6: BUDGET MANAGEMENT AND APPROVALS
+---------------------------------------
+
+- Department budgets are prepared annually and reviewed quarterly.
+- Any spend above ₹50,000 requires Director-level approval.
+- New project budgets must include:
+  - Project Code
+  - Cost Center
+  - Estimated Spend
+  - Expected ROI
+- Cost Center codes are issued by the Finance Planning Team.
+- Budget utilization reports are shared with Department Heads monthly.
+- Overspending beyond 10% of the approved budget requires CFO sign-off.
+- Finance reserves the right to delay or deny expenses if budget limits are exceeded.
+- Procurement and Finance jointly review all capital expenditure (CAPEX) requests.
+
+---------------------------------------
+SECTION 7: VENDOR PAYMENTS AND INVOICING
+---------------------------------------
+
+- Vendor payments are made strictly against approved Purchase Orders (POs).
+- Invoices must mention PO number, GST number, and project reference.
+- Invoice processing timeline:
+  - Verification: 2 working days
+  - Approval: 3 working days
+  - Payment release: 5 working days
+- Payment modes: NEFT or Bank Transfer.
+- Vendors must update bank details with Finance before first payment.
+- TDS deductions will be applied as per statutory rules.
+- Late submissions or incomplete documents will delay payment processing.
+- Vendor payment-related queries: vendor.support@company.com
+
+---------------------------------------
+SECTION 8: ADVANCE PAYMENTS
+---------------------------------------
+
+- Advances can be requested for official purposes only (e.g., event, travel, procurement).
+- Approval flow:
+  1. Manager Approval
+  2. Finance Review
+  3. CFO Approval (if above ₹50,000)
+- Advance utilization report must be submitted within 15 days.
+- Unutilized amounts must be refunded immediately.
+- No further advances will be issued until previous ones are cleared.
+
+---------------------------------------
+SECTION 9: FINANCE POLICY AND GOVERNANCE
+---------------------------------------
+
+- The company follows a strict “No Cash Payment” policy.
+- All payments must be done via digital or banking channels.
+- All financial transactions are recorded in SAP/ERP system.
+- Employees are not allowed to make payments on behalf of the company without written authorization.
+- Records of financial transactions must be retained for a minimum of 7 years.
+- Regular audits are conducted quarterly by the Internal Audit Team.
+- Misuse of company funds will result in disciplinary action.
+
+---------------------------------------
+SECTION 10: DOCUMENTATION AND RECORD KEEPING
+---------------------------------------
+
+- Employees must submit valid and legible copies of receipts/invoices.
+- Digital copies should be uploaded in PDF format only.
+- All records are stored in the Finance Document Repository (FDR).
+- Records are automatically backed up every night.
+- Audit readiness checks are performed every quarter.
+- Any falsified or duplicate bills will be reported to HR and the Compliance Committee.
+
+---------------------------------------
+SECTION 11: EMPLOYEE LOANS AND ADVANCES
+---------------------------------------
+
+- Short-term salary advances can be availed in case of emergencies.
+- Eligibility: Minimum 6 months of employment.
+- Repayment is done in 3 equal monthly installments from salary.
+- Interest-free loans up to ₹25,000 can be approved by the Finance Manager.
+- Loans above ₹25,000 require CFO approval.
+- Requests must be submitted via the Employee Self-Service (ESS) Portal.
+
+---------------------------------------
+SECTION 12: FINANCIAL YEAR-END AND AUDIT
+---------------------------------------
+
+- Financial Year: April 1 to March 31.
+- Year-end closure activities:
+  - Expense submission deadline: March 20.
+  - Budget utilization report: March 25.
+  - Final ledger closure: March 31.
+- Finance team conducts reconciliation with all departments.
+- Statutory audits start in April and complete by June.
+
+---------------------------------------
+SECTION 13: COMMON FINANCE FAQs
+---------------------------------------
+
+Q1: When is salary credited each month?  
+A1: Between the 28th and 30th of every month, depending on bank processing time.
+
+Q2: How can I claim a reimbursement?  
+A2: Go to Employee Portal → Finance → Reimbursement → Upload bills and submit.
+
+Q3: My reimbursement is delayed. What should I do?  
+A3: Check your claim status on the portal. If approved, payment will be made within 10 working days.
+
+Q4: What if I lost my travel bill?  
+A4: Contact your manager and attach a declaration note. Final decision rests with Finance.
+
+Q5: How do I request a project budget?  
+A5: Submit a Budget Request Form to the Finance Planning Team with cost center details.
+
+Q6: How to get my Form 16?  
+A6: Log into the Finance Portal → Documents → Form 16 (available in June).
+
+Q7: Can I get a salary advance?  
+A7: Yes, if you’ve completed 6 months in the company. Submit request through ESS Portal.
+
+---------------------------------------
+SECTION 14: FINANCE DEPARTMENT CONTACTS
+---------------------------------------
+
+- Payroll Support: payroll@company.com
+- Reimbursement Help: claims@company.com
+- Budget Queries: budget@company.com
+- Vendor Payments: vendor.support@company.com
+- Tax Support: tax.support@company.com
+- General Queries: finance.support@company.com
+- Working Hours: Monday–Friday, 9 AM to 6 PM
+- Emergency Finance Hotline (for urgent payroll or banking issues): +91-44-4000-8080

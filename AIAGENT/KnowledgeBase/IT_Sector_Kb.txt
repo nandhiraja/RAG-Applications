@@ -1,0 +1,237 @@
+==============================
+IT SERVICE KNOWLEDGE BASE (v1.0)
+==============================
+
+This document serves as a reference for the company’s IT Services and Support policies.  
+It contains detailed instructions, troubleshooting procedures, policies, and FAQs to help employees resolve IT-related issues or request assistance.
+
+---------------------------------------
+SECTION 1: IT HELP DESK AND SUPPORT FLOW
+---------------------------------------
+
+- All IT service requests must be logged through the IT Helpdesk Portal.
+- Helpdesk Portal URL: https://ithelp.company.com
+- Tickets can also be created by emailing: support@company.com
+- Each ticket is categorized as:
+  - Software Access Request
+  - Hardware Issue
+  - Network Issue
+  - Email / Communication
+  - Policy / Security
+- Standard Response Time:
+  - Critical issues (System down / Network outage): 2 hours
+  - High priority (VPN / Email not working): 4 hours
+  - Medium priority (Software installation): 1 business day
+  - Low priority (General queries): 2 business days
+- Escalation Contacts:
+  - Level 1: IT Service Desk
+  - Level 2: IT Infrastructure Lead
+  - Level 3: IT Head
+
+---------------------------------------
+SECTION 2: SOFTWARE ACCESS AND INSTALLATION
+---------------------------------------
+
+- All new software installations must be requested through the IT Portal.
+- Software categories:
+  - Productivity Tools (MS Office, Adobe Acrobat)
+  - Development Tools (Visual Studio, IntelliJ, Postman)
+  - Design Tools (Figma, Adobe XD)
+  - Communication Tools (Teams, Slack, Zoom)
+- Freeware or open-source software still requires approval to ensure license compliance.
+- IT will install software using admin credentials after approval.
+- Paid software requires:
+  1. Manager approval
+  2. License allocation confirmation
+- Software licenses are reviewed quarterly.
+- Unauthorized software installations are a violation of company IT policy.
+- If software crashes repeatedly:
+  - Restart your system.
+  - Clear temporary files using “Disk Cleanup”.
+  - Reinstall or update the software through IT.
+
+---------------------------------------
+SECTION 3: PASSWORD MANAGEMENT
+---------------------------------------
+
+- All employees must reset their passwords every 90 days.
+- Password must meet these criteria:
+  - Minimum 8 characters
+  - At least one uppercase, one lowercase, one digit, and one symbol
+- Password reset can be done through Self-Service Password Portal.
+- If locked out of your account:
+  1. Wait 15 minutes for automatic unlock.
+  2. If still locked, contact the IT Helpdesk.
+- Multi-Factor Authentication (MFA) is mandatory for VPN and cloud access.
+- Do not share your password under any circumstance.
+
+---------------------------------------
+SECTION 4: EMAIL AND COMMUNICATION SERVICES
+---------------------------------------
+
+- Outlook and Microsoft Teams are the official tools for communication.
+- Mailbox quota: 5GB. Once full, you will not receive new emails.
+- Steps to archive old mails:
+  1. Go to File → Tools → Mailbox Cleanup.
+  2. Archive mails older than 6 months.
+- Shared mailboxes:
+  - Can be accessed only after manager approval.
+  - IT grants access within 1 business day.
+- Teams meeting issues:
+  - Clear cache from `%appdata%\Microsoft\Teams`
+  - Restart the application.
+- Out-of-office messages can be set through Outlook → File → Automatic Replies.
+
+---------------------------------------
+SECTION 5: DEVICE AND HARDWARE SUPPORT
+---------------------------------------
+
+- Company provides laptops, docking stations, and monitors to all employees.
+- IT maintains an inventory through the Asset Management System (AMS).
+- Lost or damaged devices must be reported immediately.
+- Common issues and resolutions:
+  - **Laptop Slow:** Restart, clear cache, disable startup apps.
+  - **Wi-Fi Not Connecting:** Forget network → reconnect → restart.
+  - **Display Issues:** Check HDMI/Type-C cables or restart docking station.
+- Loaner devices can be provided for up to 3 days during repairs.
+- Hardware replacement SLA: 2–3 business days.
+
+---------------------------------------
+SECTION 6: NETWORK AND VPN ACCESS
+---------------------------------------
+
+- VPN is required to access internal systems from outside office premises.
+- VPN software used: GlobalProtect / Cisco AnyConnect.
+- Login credentials: Company domain ID and password.
+- MFA (via mobile authenticator) is mandatory.
+- Common VPN errors:
+  - Error 403 → Unauthorized access → reset password.
+  - Constant disconnect → check home internet stability or update client.
+- Network downtime will be notified through official communication channels.
+- Always disconnect VPN when not in use to conserve licenses.
+
+---------------------------------------
+SECTION 7: IT SECURITY POLICY
+---------------------------------------
+
+- IT Security Guidelines:
+  - Do not install unverified software or browser extensions.
+  - USB drives are blocked by default; request whitelist if needed.
+  - Always lock your screen when leaving your desk.
+  - Phishing awareness:
+    - Do not click unknown links.
+    - Report suspicious emails using the Outlook “Report Message” button.
+- Data Handling:
+  - Confidential data must not be saved on local drives.
+  - Use company OneDrive or SharePoint for secure storage.
+- Remote Access:
+  - Only allowed via company-approved VPN.
+- System updates:
+  - All devices auto-install security patches weekly.
+
+---------------------------------------
+SECTION 8: POLICY ON ASSETS AND RETURNS
+---------------------------------------
+
+- All hardware assets remain company property.
+- At resignation or transfer:
+  - Employee must return all IT equipment.
+  - Clearance will not be issued until assets are verified.
+- Asset verification includes:
+  - Serial number check
+  - Condition report
+  - Access revocation confirmation
+- Lost assets will be investigated by HR and IT jointly.
+- IT maintains a digital record of each device.
+
+---------------------------------------
+SECTION 9: HARDWARE PURCHASE AND REQUEST POLICY
+---------------------------------------
+
+- Employees cannot purchase IT hardware directly.
+- All procurement must go through the IT Purchase Request system.
+- Steps:
+  1. Fill out IT Equipment Request Form.
+  2. Obtain manager approval.
+  3. IT verifies availability in stock.
+  4. If unavailable, procurement is initiated.
+- Purchase approval hierarchy:
+  - Up to ₹25,000 → IT Manager
+  - ₹25,000 – ₹1,00,000 → Department Head
+  - Above ₹1,00,000 → CIO approval
+
+---------------------------------------
+SECTION 10: REMOTE WORK AND IT SUPPORT
+---------------------------------------
+
+- Remote employees must ensure:
+  - Stable internet (minimum 10 Mbps)
+  - Active VPN connection
+  - Company-installed antivirus enabled
+- IT provides remote troubleshooting via secure remote access tools.
+- For remote system setup:
+  - Laptop will be preconfigured and shipped.
+  - VPN credentials shared securely via email.
+- Data backup is employee responsibility; connect to OneDrive daily.
+
+---------------------------------------
+SECTION 11: BACKUP AND RECOVERY
+---------------------------------------
+
+- Company uses OneDrive for document backup.
+- Critical project data should be stored on SharePoint.
+- Daily auto-backups occur at 2 AM.
+- In case of accidental file deletion:
+  - Go to OneDrive → Recycle Bin → Restore file (available for 30 days).
+- System recovery requests can be raised via Helpdesk under “Data Recovery”.
+
+---------------------------------------
+SECTION 12: COMMON TROUBLESHOOTING TIPS
+---------------------------------------
+
+- If the system is not turning on:
+  - Check power cable and adapter.
+  - Hold power button for 10 seconds and restart.
+- System overheating:
+  - Ensure air vents are not blocked.
+  - Clean fan and avoid soft surfaces.
+- Printer not responding:
+  - Check if printer is online.
+  - Restart printer spooler service.
+- Audio not working:
+  - Check “Playback Devices” → set correct default device.
+  - Update audio drivers.
+- For software errors:
+  - Take a screenshot and include it when raising the ticket.
+
+---------------------------------------
+SECTION 13: COMMON FAQs
+---------------------------------------
+
+Q1: How do I get access to new software?
+A1: Raise a request on the IT Portal under “Software Access”. Manager approval is required for licensed software.
+
+Q2: My system password expired. What should I do?
+A2: Use Self-Service Password Reset or contact IT Helpdesk.
+
+Q3: Can I connect a personal USB or external drive?
+A3: Not without prior IT approval. External devices are restricted for security.
+
+Q4: I cannot connect to VPN at home.
+A4: Verify internet connection, restart VPN client, and ensure MFA is approved.
+
+Q5: My laptop is running very slow.
+A5: Restart the laptop, close background apps, and run Disk Cleanup. If unresolved, raise a performance ticket.
+
+Q6: How can I get a replacement laptop?
+A6: Raise a “Hardware Replacement” request. IT will provide a loaner within 24 hours if approved.
+
+---------------------------------------
+SECTION 14: IT CONTACT INFORMATION
+---------------------------------------
+
+- IT Helpdesk: support@company.com
+- IT Hotline: +91-44-4000-9090
+- Escalation Email: ithead@company.com
+- Working Hours: Monday–Friday, 9 AM – 6 PM
+- Emergency Support: Available 24x7 for production-critical issues.
