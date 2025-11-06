@@ -11,7 +11,7 @@ client = Groq(
 )
 
 def getRespose(Query,context):
-
+    print("\n\nModel called  chat".center(30,'-'))
 
     chat_completion = client.chat.completions.create(
         messages=[
@@ -28,4 +28,5 @@ def getRespose(Query,context):
     
     
     
-    print(chat_completion.choices[0].message.content)
+    print("Model direct groq :\n\n",chat_completion.choices[0].message.content)
+    return chat_completion.choices[0].message.content

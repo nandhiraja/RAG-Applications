@@ -3,125 +3,123 @@ import os
 from typing import List
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.prebuilt import ToolNode
-
+from langchain.agents import create_agent
+from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_groq import ChatGroq
+from langchain_core.prompts  import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+import custom_Agent
+from dotenv import load_dotenv
+from langchain.tools  import tool
+load_dotenv()
 
 
+API_KEY = os.getenv("GROQ_API_KEY")
 
-def finance_retrieve(query: str) -> str:
+# ================================------------Model Initialize-------------------=================================================
+
+
+MODEL =  ChatGroq(api_key=API_KEY,
+                  model="llama-3.3-70b-versatile")
+
+
+# ================================------------Tools Initialize-------------------=================================================
+
+@tool
+def finance_assitent(query : str):
     """
-    Retrieve finance-relevant passages for the query from your Finance KB and return a concise text summary.
+            Finance Context Provider Tool
+
+            Purpose:
+                Retrieves and summarizes finance-related data or insights from the company's financial knowledge sources.
+            When to Use:
+                - When the user's query involves topics such as:
+                    * revenue, profit, or loss analysis
+                    * financial reports or quarterly performance
+                    * investments, budgets, or forecasts
+                    * expenses, income, or cost trends
+                    * company valuation or growth metrics
+                - When numeric or factual financial data is needed to support the response.
+           
     """
-   
-    return "Finance tool placeholder: connect to your Finance KB retrieval and return top passages."
 
-def it_retrieve(query: str) -> str:
+    return custom_Agent.get_finance_datas(query)
+
+
+@tool
+def information_technology_assitent(query : str):
     """
-    Retrieve IT-relevant passages for the query from your IT KB and return a concise text summary.
-    """
-    return "IT tool placeholder: connect to your IT KB retrieval and return top passages."
+     IT Context Provider Tool
+
+     Purpose:
+         Retrieves, explains, or summarizes information related to technology, infrastructure, or software systems within the company.
+     When to Use:
+         - When the query involves topics like:
+             * software systems, applications, or platforms
+             * IT policies, architecture, or infrastructure
+             * technology stack details (frontend, backend, databases)
+             * development tools, programming frameworks, or API usage
+             * troubleshooting technical issues or updates        
+     """
+
+    return custom_Agent.get_IT_datas(query)
 
 
+# ================================------------Agent  Initialize-------------------=================================================
+MODEL_PROMPT = ChatPromptTemplate.from_messages([
+                        ("system", """
+                                 You are **Orchestrate**, a reliable AI assistant that manages user queries for the company.
+
+                                 Your purpose:
+                                 - Understand the user's input carefully.
+                                 - Decide intelligently whether to use available tools (e.g., RAG retrievers, knowledge APIs, data services).
+                                 - If the query requires factual or document-based information, invoke the appropriate RAG tool to retrieve it.
+                                 - If sufficient information is retrieved, summarize and answer clearly using that data.
+                                 - If the retrieved data is empty, unrelated, or unclear — **do NOT guess or hallucinate**.
+                                   Politely explain that no relevant information was found.
+
+                                 Guidelines:
+                                 1. Be concise, direct, and helpful — respond in a natural, conversational tone.
+                                 2. Never invent facts. Only use retrieved or given context.
+                                 3. When RAG data is retrieved:
+                                      - Use it as factual evidence.
+                                      - Summarize or explain it clearly.
+                                      - Avoid dumping raw data.
+                                 4. When RAG returns nothing:
+                                      - Say something like: 
+                                        “I couldn’t find any relevant information for that in the current data.”
+                                      - Then, if possible, suggest what the user could try next.
+                                 5. Maintain professionalism — you are the company's reliable assistant, not a chatbot.
+                                 6. Always ensure your final output is understandable to a normal user (avoid internal reasoning traces).
+                          """),
+                        ("human", "{input}"),
+                        ("placeholder", "{agent_scratchpad}")
+                 ])
 
 
-
-
-
-llm = ChatGroq(
-    api_key="",
-    model="llama-3.3-70b-versatile",   
-    temperature=0.2,
-)
-
-llm_with_tools = llm.bind_tools([finance_retrieve, it_retrieve])
-
-
-
-
-
-
-
-def call_model(state: MessagesState):
-    messages = state["messages"]
-    sys = SystemMessage(
-        content=(
-            "You are a helpful assistant for IT and Finance questions. "
-            "Always respond in English. "
-            "If a tool is helpful, call the most relevant tool with clear arguments."
-        )
+model_with_tool = create_tool_calling_agent(
+        llm =MODEL,
+        tools=[information_technology_assitent,finance_assitent],
+        prompt=MODEL_PROMPT
     )
-    response = llm_with_tools.invoke([sys] + messages)
-    return {"messages": [response]}
 
+agent_executor = AgentExecutor(agent=model_with_tool,
+                                tools=[information_technology_assitent,finance_assitent],
+                                verbose=True)
 
+def main(agent_executor):
+    
+    chatHistory=[]
 
-
-
-tool_node = ToolNode([finance_retrieve, it_retrieve])
-
-
-
-
-
-def should_continue(state: MessagesState):
-    last = state["messages"][-1]
-    if isinstance(last, AIMessage) and getattr(last, "tool_calls", None):
-        return "tools"
-    return END
-
-
-
-
-
-
-
-builder = StateGraph(MessagesState)
-builder.add_node("call_model", call_model)
-builder.add_node("tools", tool_node)
-
-builder.add_edge(START, "call_model")
-builder.add_conditional_edges("call_model", should_continue, ["tools", END])
-builder.add_edge("tools", "call_model")
-
-graph = builder.compile()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    print("Tool-calling orchestrator ready. Type 'no' to exit.")
     while True:
-        query = input("\nEnter Question (or type 'no' to exit): ").strip()
-        if query.lower() == "no":
-            break
-        result = graph.invoke({"messages": [HumanMessage(content=query)]})
+        user_input = input("Ask your Query : ")
+        response = agent_executor.invoke({
+            "input":user_input,
+            "chat_history" :chatHistory
+        })
+        chatHistory.append(response)
+        print("Query" ,response["input"], "\n\noutput ", response["output"])
 
-        # Print the final assistant message
-        ai_msgs = [m for m in result["messages"] if isinstance(m, AIMessage)]
-        if ai_msgs:
-            final = ai_msgs[-1]
-            # Optional: infer which tool was used by inspecting earlier AIMessage.tool_calls
-            used = None
-            for m in result["messages"]:
-                if isinstance(m, AIMessage) and getattr(m, "tool_calls", None):
-                    calls = m.tool_calls or []
-                    if calls:
-                        used = calls[0].get("name")
-            if used:
-                print(f"\nAgent (via tool): {used}")
-            else:
-                print("\nAgent: fallback_llm")
-            print("Assistant:", final.content)
-        else:
-            print("\nAssistant: (no response)")
+
+
+main(agent_executor)

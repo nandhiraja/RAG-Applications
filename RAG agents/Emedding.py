@@ -32,7 +32,9 @@ class Embedding:
 
     def getEmbeddings(self,datas):
         if(datas):
-            print("Encodding..././")
+            print("Embeddings Begins \n\n", datas)
             Embedding_vectors = self.Embedd_Model.encode(datas)
+            print("\n\nEmbeddings End \n\n")
+
             return Embedding_vectors
     

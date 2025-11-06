@@ -2,21 +2,24 @@ import chromadb
 
 class vectorDataBase:
 
-    def __init__(self,path_to_store,collection_name):
+    def __init__(self,path_to_store):
         self.client = chromadb.PersistentClient(path_to_store)
-        self.collection = self.client.get_or_create_collection(collection_name)
+        # self.collection = self.client.get_or_create_collection(collection_name)
 
 
 
 
-    def storeData(self,vector_embeddings,documents,indexs=None,meta_data=None):
+    def storeData(self,vector_embeddings,documents,indexs=None,meta_data=None ,collection_name=None):
+        
+        collection = self.client.get_or_create_collection(collection_name)
+
         if(indexs==None):
             indexs = [str(i) for i in range(0,len(vector_embeddings))]
 
         print(len(indexs))
         # print(vector_embeddings,documents)
 
-        self.collection.add(
+        collection.add(
             embeddings=vector_embeddings,
             ids=indexs,
             documents=documents
@@ -26,5 +29,14 @@ class vectorDataBase:
 
 
 
-    def Query(self,Query_vectors,n_result=3):
-        return self.collection.query(query_embeddings=Query_vectors,n_results=n_result)
+    def Query(self,Query_vectors,n_result=3 ,collection_name=None):
+        try:
+            collection = self.client.get_collection(collection_name)
+            if(collection):
+            
+                return collection.query(query_embeddings=Query_vectors,
+                                     n_results=n_result)
+        except : 
+            print("error")
+            return "Sorry not collection exist as :"+collection_name
+    

@@ -1,2 +1,21 @@
 *.env
-__pycache__
+**/__pycache__/# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+*.env
+.env
+
+# Databases and storage
+*.sqlite3
+RAG agents/My_Storage/
+
+# Zips
+*.zip
+
+# System files
+.DS_Store
+Thumbs.db
+
