@@ -1,13 +1,8 @@
 
 import os
-from typing import List
-from langgraph.graph import StateGraph, MessagesState, START, END
-from langgraph.prebuilt import ToolNode
-from langchain.agents import create_agent
 from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_groq import ChatGroq
 from langchain_core.prompts  import ChatPromptTemplate
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 import custom_Agent
 from dotenv import load_dotenv
 from langchain.tools  import tool
@@ -105,6 +100,8 @@ model_with_tool = create_tool_calling_agent(
 
 agent_executor = AgentExecutor(agent=model_with_tool,
                                 tools=[information_technology_assitent,finance_assitent],
+                                max_iterations=4,
+                                early_stopping_method="generate",
                                 verbose=True)
 
 def main(agent_executor):
@@ -122,4 +119,4 @@ def main(agent_executor):
 
 
 
-main(agent_executor)
+# main(agent_executor)

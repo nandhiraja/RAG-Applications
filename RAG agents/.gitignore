@@ -1,0 +1,33 @@
+# Python
+###################
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+
+# Environment variables (contains secrets!)
+.env
+
+# AI / Vector Database
+###################
+# Ignore the generated ChromaDB storage.
+# This folder should be re-created from the files in KnowledgeBase.
+My_Storage/
+
+
+# Node.js / Frontend
+###################
+# Dependencies (this is already in your frontend/.gitignore,
+# but it's good to have in the root as well)
+frontend/node_modules/
+
+# Build output folder (from Vite/React)
+frontend/dist/
+frontend/.vite/
+
+# OS-specific files
+###################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db ""

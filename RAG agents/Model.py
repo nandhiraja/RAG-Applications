@@ -10,17 +10,19 @@ client = Groq(
     api_key=API_KEY,
 )
 
-def getRespose(Query,context):
+def getRespose(Query):
     print("\n\nModel called  chat".center(30,'-'))
 
     chat_completion = client.chat.completions.create(
         messages=[
             {   "role" : "system",
-                "content": "you are the agent u need to act like that. there will be provide the context and query"
+                "content": """You are a query refinement assistant. Your sole task is to rephrase the user's input into a clear, concise, and specific instruction. This refined instruction will be fed to an orchestration model that selects the correct tool (e.g., finance, IT).
+
+                    Do not answer the query. Only output the refined instruction."""
             },
             {
                 "role": "user",
-                "content": f"user_Query :{Query} , context : {context}"
+                "content": f"user_Query :{Query} "
             }
         ],
         model="llama-3.3-70b-versatile",
