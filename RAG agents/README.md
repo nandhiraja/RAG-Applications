@@ -76,7 +76,8 @@ npm install
 npm run dev
 ```
 ## Images 
-<img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/dcc2f207-8a22-4f1a-a2aa-7827c9f64eb8" />
+
+<img width="1689" height="1003" alt="Image" src="https://github.com/user-attachments/assets/a8f0c149-6edf-4b0a-996d-fb3fe68f24f7" />
 
 <img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/fd275c0c-945d-4180-8f01-17f6a1fbdbf8" />
 
