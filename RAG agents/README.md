@@ -1,4 +1,3 @@
-Of course, here is a concise and neat README that focuses only on the essential points of your project.
 
 # RAG Agent Chat Application
 
