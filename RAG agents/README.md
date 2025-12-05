@@ -61,6 +61,8 @@ echo "GROQ_API_KEY=your_groq_api_key" > .env
 uvicorn main:app --reload --port 8000
 ```
 
+
+
 ### Frontend
 
 ```bash
@@ -73,6 +75,15 @@ npm install
 # 3. Run the development server
 npm run dev
 ```
+## Images 
+<img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/dcc2f207-8a22-4f1a-a2aa-7827c9f64eb8" />
+
+<img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/fd275c0c-945d-4180-8f01-17f6a1fbdbf8" />
+
+<img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/da1c48f0-8957-4d73-ad99-16f8c8d7489e" />
+
+<img width="1724" height="1007" alt="Image" src="https://github.com/user-attachments/assets/c865e4e9-6ef8-4b1b-b102-3834f1a3ea4f" />
+
 
 ## API Endpoints
 

@@ -1,0 +1,112 @@
+=== ABC TECH SOLUTIONS IT DEPARTMENT – FULL GUIDE & POLICIES 2025 ===
+Updated: 04 December 2025
+
+────────────────────────────────────
+1. IT HELP DESK & SUPPORT CHANNELS
+────────────────────────────────────
+• Email             : it-support@abctech.co.th
+• Ticket portal     : https://itsm.abctech.co.th
+• Phone (24/7)      : 02-123-4567 ext. 4000
+• Emergency (P1)    : WhatsApp group “IT Critical Alert”
+• Walk-in           : 12th floor, IT Room 1205 (08:30-17:30)
+
+────────────────────────────────────
+2. STANDARD EMPLOYEE DEVICES 2025-2027
+────────────────────────────────────
+Laptop (Office staff)
+   Model          : Dell Latitude 5550 or HP EliteBook 845 G11
+   CPU            : Intel Core Ultra 7 165H
+   RAM            : 32 GB LPDDR5
+   Storage        : 1 TB NVMe Gen4
+   Screen         : 15.6" FHD touch optional
+   Warranty       : 4 years ProSupport + ADP
+
+Desktop (Factory/Back office)
+   Dell OptiPlex 7020 Tower – i7, 32GB, 1TB SSD
+
+Mobile phone (approved positions only)
+   iPhone 15 Pro or Samsung S24 – max budget 35,000 THB
+
+────────────────────────────────────
+3. LAPTOP / PC ISSUES & REPAIR PROCESS
+────────────────────────────────────
+1. Create ticket → select category (Hardware / Software / Network)
+2. IT collects device within 2 hours (BKK) or 24 hrs (province)
+3. Loaner laptop issued immediately (Dell 7440 ready stock ×120 units)
+4. Repair SLA:
+   - Minor     : 24 hrs
+   - Major     : 3-5 days
+   - Motherboard replacement : 7-10 days
+5. If >14 days → brand new replacement
+
+────────────────────────────────────
+4. WI-FI & NETWORK GUIDE
+────────────────────────────────────
+Office Wi-Fi
+   SSID               : ABC_SECURE / ABC_GUEST / ABC_IOT
+   ABC_SECURE         : 802.1x – use Windows username@abctech.co.th
+   ABC_GUEST          : Password on TV screen at reception (changes Monday 09:00)
+   5 GHz preferred
+
+Home / Remote
+   VPN                : Palo Alto GlobalProtect
+   Server             : vpn.abctech.co.th
+   Download           : https://vpn.abctech.co.th
+   2FA required       : Microsoft Authenticator
+
+────────────────────────────────────
+5. NEW DEVICE REQUEST WORKFLOW (2025)
+────────────────────────────────────
+1. Fill Google Form → https://forms.abctech.co.th/device-request
+2. Department Head → Approve/Reject within 48 hrs
+3. IT reviews spec & budget
+4. Procurement purchases (21-45 days lead time)
+5. IT receives → imaging → standard software → delivery
+Standard image includes:
+   • Windows 11 24H2 Enterprise
+   • Microsoft 365 E5 license
+   • Sophos Intercept X + Central
+   • Company ERP, Power BI, Tableau, VS Code, Docker
+   • BitLocker + Intune enrollment
+
+────────────────────────────────────
+6. SOFTWARE INSTALLATION POLICY
+────────────────────────────────────
+Only IT can install software
+Allowed list (self-install OK):
+   MS Office, Teams, Edge, Chrome, Zoom, Adobe Reader DC, 7-Zip, Notion, Line Works
+Request new software → submit business case → IT Manager approval → within 7 days
+
+────────────────────────────────────
+7. COMMON PROBLEMS & SELF-HELP
+────────────────────────────────────
+• No Wi-Fi → Run “Wi-Fi Fix” script on desktop
+• Slow laptop → Run “Cleanup Tool” or restart twice
+• Cannot print → \\printserver\ follow instructions
+• Blue screen → note error code → call IT immediately
+• Outlook not syncing → Quick Repair Office online
+
+────────────────────────────────────
+8. ACCESS & PERMISSIONS
+────────────────────────────────────
+• ERP access → request via HR system (new joiner auto 3 days)
+• SharePoint / OneDrive 5 TB → auto provisioned
+• Admin rights → only IT staff + 5 approved developers
+
+────────────────────────────────────
+9. ASSET RETURN UPON RESIGNATION
+────────────────────────────────────
+Last working day before 12:00:
+   - Laptop + charger + docking + mouse + SIM + access card
+   - IT wipes device and disables all accounts immediately
+   - Fine 100% device value if not returned
+
+────────────────────────────────────
+10. IT BUDGET & PROJECTS 2025
+────────────────────────────────────
+• Zero Trust implementation       : Q1-Q2
+• Migrate on-premise to Azure     : Q3
+• New data center (Chonburi)      : Q4
+• 200 new laptops + 100 iPhones    : already ordered
+
+IT Director: Ms. Nattaporn S. (nattaporn@abctech.co.th

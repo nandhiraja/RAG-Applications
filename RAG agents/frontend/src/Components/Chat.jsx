@@ -122,7 +122,7 @@ const ChatPage = () => {
                     ) : (
                       message.text
                     )}</div>
-                  {/* <div className="message-time">{message.time}</div> */}
+                  <div className="message-time">{message.time}</div>
                 </div>
               </div>
             </div>
