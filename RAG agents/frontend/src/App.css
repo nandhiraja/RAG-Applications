@@ -1,30 +1,33 @@
 :root {
   --color-white: rgba(255, 255, 255, 1);
-  --color-cream-50: rgba(252, 252, 249, 1);
-  --color-cream-100: rgba(255, 255, 253, 1);
-  --color-slate-900: rgba(19, 52, 59, 1);
-  --color-slate-500: rgba(98, 108, 113, 1);
-  --color-teal-500: rgba(33, 128, 141, 1);
-  --color-teal-600: rgba(29, 116, 128, 1);
-  --color-charcoal-700: rgba(31, 33, 33, 1);
-  --color-charcoal-800: rgba(38, 40, 40, 1);
-  --color-brown-600-rgb: 94, 82, 64;
-  --color-teal-500-rgb: 33, 128, 141;
-  
+  --color-cream-50: rgb(253, 253, 252);
+    --color-gray-200: rgb(31, 29, 29);
+
+  --color-cream-100: rgb(255, 255, 229);
+  --color-slate-900: rgb(12, 30, 34);
+  --color-slate-500: rgb(44, 208, 236);
+  --color-teal-500: rgb(15, 12, 207);
+  --color-teal-600: rgb(26, 102, 216);
+  --color-charcoal-700: rgb(43, 44, 43);
+  --color-charcoal-800: rgb(28, 29, 29);
+  --color-brown-600-rgb: 31, 184, 184;
+  --color-teal-500-rgb: 31, 184, 184;
+  --color-cream-1000: rgb(20, 20, 19);
+
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
   --color-text: var(--color-slate-900);
   --color-text-secondary: var(--color-slate-500);
-  --color-primary: var(--color-teal-500);
+  --color-primary: var(--color-slate-500);
   --color-primary-hover: var(--color-teal-600);
-  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.4);
   --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-gray-400-rgb: 119, 124, 124;
-    --color-gray-200: rgba(245, 245, 245, 1);
+    --color-gray-200: rgb(255, 254, 255);
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
     --color-text: var(--color-gray-200);
@@ -41,16 +44,25 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--color-background);
+  background: var(--color-cream-1000);
   color: var(--color-text);
   line-height: 1.6;
+  
 }
 
 .app-container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
+  max-width: 75%;
+  margin: auto;
+  box-shadow: 6px 6px 20px rgba(117, 138, 133, 0.253);
+  border: 1px solid rgb(15, 177, 199);
+  border-radius: 10px;
+  margin-top: 2%;
+  
 }
+  
 
 .nav-sidebar {
   width: 280px;
@@ -74,7 +86,7 @@ body {
 .logo-icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--color-primary), #32b8c6);
+  background: linear-gradient(135deg, var(--color-primary), #0c1d0e);
   border-radius: 8px;
   display: flex;
   align-items: center;
